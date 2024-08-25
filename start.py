@@ -1,5 +1,30 @@
 # By Andrew Shaw 8/24/2024
 
+#### Basic assumptions ####
+# 1: Elevators can only move up and down
+# 2: Elevators are on their own tracks/cables and will not collide
+# 3: Elevators are all servicing the same floors
+# 4: Call buttons are on every floor
+# 5: Elevators have buttons for every floor
+# 6: There is no basement (though making the floors nameable to things like #0 = BF-2 would be trivial)
+# 7: There is atleast 1 elevator
+# 8: There are atleast 2 floors
+# 9: An elevator takes time to do actions, such as opening/closing doors, moving up/down a floor, starting/stopping
+# 10: that this project is going to be viewed by engineers and I don't need to sanatize inputs
+
+#### Features that could be added ####
+# 1: UI, I started on some UI but got bogged down with library and import errors
+# 2: It would be good to split each class into it's own file for proper data model and controller separation
+# 3: Could add some grouping logic for multiple elevators so that 2 elevators don't go to adjacent floors in the same direction
+# 4: Could add smaller units of time, instead of everything being 1 'action' things could be changed so that the elevators have to wait in certain states, or take mutliple cycles to move
+# 5: Multithreading and background processing so that things move without user input
+
+#### Personal Notes ####
+# Thank you for you time
+# I went out of my way to program this in Python, since that is what Bluestaq uses
+# I am much more comfortable with a rigid language like C#, but I thought I might as well learn some more Pyhton
+# I hope that is appreciated and not penalized if I didn't follow the best python conventions
+
 def main():
    
    elvNumb = int(input("Enter number of elevators: "))   
